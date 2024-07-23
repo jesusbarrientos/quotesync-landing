@@ -1,0 +1,29 @@
+---
+import '@/styles/globals.css'
+import type { MarkdownLayoutProps } from 'astro';
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  description: string;
+  robots: string;
+}>;
+
+const {frontmatter} = Astro.props;
+---
+
+<html lang="es">
+  <head>
+      <meta charset="utf-8" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="generator" content={Astro.generator} />
+      <meta name="title" content={frontmatter.title}>
+      <meta name="description" content={frontmatter.description}>
+      <meta name="author" content="QuoteSync">
+      <meta name="robots" content={frontmatter.robots} />
+      <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

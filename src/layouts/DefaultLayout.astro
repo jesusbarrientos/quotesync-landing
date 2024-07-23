@@ -1,0 +1,21 @@
+---
+import '@/styles/globals.css'
+
+const { title } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+      <meta charset="utf-8" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="generator" content={Astro.generator} />
+      <meta name="title" content="No más hojas de cálculo para cotizaciones. ¡Prueba gratis ahora!">
+      <meta name="description" content="Simplifica la creación de presupuestos con nuestra aplicación intuitiva. Gestiona empleados, clientes, categorías, productos, servicios y cotizaciones de manera eficiente.">
+      <meta name="author" content="QuoteSync">
+      <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
