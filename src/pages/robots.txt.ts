@@ -4,6 +4,9 @@ const robotsTxt = `
 User-agent: *
 Allow: /
 
+Disallow: /terms-and-conditions
+Disallow: /privacy-policy
+
 Sitemap: ${new URL('sitemap-index.xml', import.meta.env.SITE).href}
 `.trim();
 
