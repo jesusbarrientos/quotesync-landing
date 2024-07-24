@@ -1,11 +1,10 @@
 ---
 import DefaultLayout from "@/layouts/DefaultLayout.astro";
-import { Button } from "@/components/ui/button"
+import {LandingPage} from "../components/pages/index/LandingPage";
 
 const title = "QuoteSync - Simplifica la creación de Cotizaciones"
 ---
 
 <DefaultLayout title={title}>
-	<h1>QuoteSync</h1>
-	<Button>Probar Ahora!</Button>
+	<LandingPage client:load />
 </DefaultLayout>

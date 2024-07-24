@@ -1,0 +1,36 @@
+.landingPage {
+  h2 {
+    @apply text-2xl mb-2;
+  }
+
+  h3 {
+    @apply text-lg mb-1 text-muted-foreground;
+  }
+
+  p {
+    @apply mb-3;
+  }
+}
+
+.sectionContent {
+  @apply max-w-[52%];
+}
+
+.sectionContentCard {
+  @apply px-5 py-4 z-30
+  rounded-xl border hover:border-primary
+  bg-card cursor-default hover:shadow-lg
+  transition-all duration-300;
+}
+
+.spreadsheetImg {
+  @apply absolute z-[-2] h-[115%] top-1/2 object-contain max-w-none min-h-[500px] rounded-2xl;
+  transform: translate(-105%, -50%);
+  mask-image:
+      linear-gradient(to top,  transparent 0%, #fff 40% 100%, transparent 100%),
+      linear-gradient(to left, transparent 0%, #fff 0% 40%, transparent 100%);
+  mask-size: 100% 100%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-composite: intersect;
+}
