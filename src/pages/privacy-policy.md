@@ -14,7 +14,6 @@ En QuoteSync, valoramos su privacidad y estamos comprometidos a proteger su info
 
 **Información de Registro:** Cuando crea una cuenta en QuoteSync, recopilamos su dirección de correo electrónico. Esta es la única información personal que almacenamos directamente.
 
-
 **Autenticación:** Utilizamos la plataforma Kinde (https://kinde.com/) para la autenticación de usuarios. Toda la información de autenticación y gestión de contraseñas es manejada por Kinde. Cualquier irregularidad o filtración de datos es responsabilidad exclusiva de Kinde.
 Datos de Uso: Podemos recopilar información sobre cómo accede y utiliza la Aplicación, incluyendo su dirección IP, tipo de dispositivo, sistema operativo, y las páginas que visita.
 
@@ -24,13 +23,11 @@ Datos de Uso: Podemos recopilar información sobre cómo accede y utiliza la Apl
 
 **Comunicación:** Podemos utilizar su dirección de correo electrónico para enviarle notificaciones importantes sobre la Aplicación, actualizaciones, y cambios en nuestros términos y políticas.
 
-
 **Análisis y Mejoras:** Utilizamos datos de uso para entender cómo los usuarios interactúan con la Aplicación y para mejorar nuestros servicios.
 
 ## 3. Compartición de Información
 
 **Proveedores de Servicios:** Podemos compartir su información con terceros proveedores de servicios que nos ayudan a operar la Aplicación, como Kinde para la autenticación de usuarios.
-
 
 **Requerimientos Legales:** Podemos divulgar su información si así lo requiere la ley o en respuesta a solicitudes legales, como órdenes judiciales o citaciones.
 

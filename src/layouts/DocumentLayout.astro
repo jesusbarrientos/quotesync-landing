@@ -1,6 +1,9 @@
 ---
-import '@/styles/globals.css'
+import '../styles/globals.scss'
+import '../styles/documents.scss'
 import type { MarkdownLayoutProps } from 'astro';
+import {Header} from "../components/widgets/Header";
+import {Footer} from "../components/widgets/Footer";
 
 type Props = MarkdownLayoutProps<{
   title: string;
@@ -23,7 +26,12 @@ const {frontmatter} = Astro.props;
       <meta name="robots" content={frontmatter.robots} />
       <title>{frontmatter.title}</title>
   </head>
-  <body>
-    <slot />
+
+  <body class="flex flex-col">
+    <Header />
+    <article class="p-5 max-w-[800px] mx-auto">
+      <slot />
+    </article>
+    <Footer />
   </body>
 </html>

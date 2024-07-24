@@ -1,0 +1,17 @@
+article {
+  h1 {
+    @apply my-5;
+  }
+
+  h2 {
+    @apply my-3;
+  }
+
+  p {
+    @apply mb-3;
+  }
+
+  em {
+    @apply text-muted-foreground text-sm;
+  }
+}
