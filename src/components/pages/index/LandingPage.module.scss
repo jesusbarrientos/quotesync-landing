@@ -1,4 +1,6 @@
 .landingPage {
+  @apply mb-20;
+
   h2 {
     @apply text-2xl mb-2;
   }
@@ -23,12 +25,24 @@
   transition-all duration-300;
 }
 
-.spreadsheetImg {
+.leftImage {
   @apply absolute z-[-2] h-[115%] top-1/2 object-contain max-w-none min-h-[500px] rounded-2xl;
   transform: translate(-105%, -50%);
   mask-image:
       linear-gradient(to top,  transparent 0%, #fff 40% 100%, transparent 100%),
       linear-gradient(to left, transparent 0%, #fff 0% 40%, transparent 100%);
+  mask-size: 100% 100%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-composite: intersect;
+}
+
+.rightImage {
+  @apply absolute z-[-2] h-[115%] top-1/2 right-0 object-cover max-w-none min-h-[500px] rounded-2xl;
+  transform: translate(105%, -50%);
+  mask-image:
+          linear-gradient(to top,  transparent 0%, #fff 40% 100%, transparent 100%),
+          linear-gradient(to right, transparent 0%, #fff 0% 80%, transparent 100%);
   mask-size: 100% 100%;
   mask-position: center;
   mask-repeat: no-repeat;
