@@ -1,5 +1,6 @@
 import {Logo} from "@/components/widgets/Logo.tsx";
 import {Separator} from "@/components/ui/separator.tsx";
+import {LoginButton} from "@/components/pages/index/LoginButton.tsx";
 
 export const Header = () => {
   return (
@@ -8,7 +9,7 @@ export const Header = () => {
         <Logo size="sm"/>
 
         <div className="flex-1 flex justify-end">
-
+          <LoginButton/>
         </div>
       </div>
 

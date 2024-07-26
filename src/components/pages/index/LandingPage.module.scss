@@ -48,3 +48,11 @@
   mask-repeat: no-repeat;
   mask-composite: intersect;
 }
+
+.companyLogo {
+  @apply inline-block h-[50px] object-contain opacity-60 transition-opacity duration-200;
+
+  &:hover {
+    @apply opacity-80;
+  }
+}

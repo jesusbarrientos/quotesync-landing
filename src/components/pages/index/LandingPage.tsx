@@ -3,6 +3,7 @@ import {useMQ} from "@/hooks/useMediaQuery.ts";
 import {cn} from "@/lib/utils.ts";
 import styles from '@/components/pages/index/LandingPage.module.scss'
 import {useTheme} from "@/hooks/useTheme.ts";
+import {Separator} from "@/components/ui/separator.tsx";
 
 export const LandingPage = () => {
   const { isMobile } = useMQ()
@@ -130,6 +131,32 @@ export const LandingPage = () => {
             <h3>Generación de Presupuestos</h3>
             <p>Crea y personaliza presupuestos, agrega servicios, productos, empleados involucrados, y mucho más. Finalmente exporta a PDF.</p>
           </div>
+        </div>
+      </section>
+
+      <Separator className="my-28"/>
+
+      <section className="flex flex-col items-center">
+        <h2 className="text-center !text-3xl text-primary">Empresas que confían en nosotros</h2>
+
+        <div className="flex flex-wrap gap-10 justify-center mt-10">
+          <img
+            title="Logo de empresa Tefcom"
+            alt="Logo de empresa que confia en QuoteSync: Tefcom"
+            src={`/images/tefcom_logo_${isDark ? 'dark' : 'light'}.svg`}
+            className={styles.companyLogo}
+          />
+
+          <img
+            title="Logo de empresa Aurora Enterprise Solutions"
+            alt="Logo de empresa que confia en QuoteSync: Aurora Enterprise Solutions"
+            src={`/images/aurora_logo_${isDark ? 'dark' : 'light'}.svg`}
+            className={styles.companyLogo}
+          />
+        </div>
+
+        <div className="mt-20">
+          <OpenPlatformButton/>
         </div>
       </section>
     </article>
